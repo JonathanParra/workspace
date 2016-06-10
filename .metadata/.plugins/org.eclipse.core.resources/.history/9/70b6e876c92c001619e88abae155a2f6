@@ -1,0 +1,25 @@
+package cl.curso.java.login;
+
+public class Conexion {
+	private static Conexion conexion;
+	
+	private Conexion(){
+		
+	}
+
+	/**
+	 * @return the conexion
+	 */
+	public static Conexion getConexion() {
+		return conexion;
+	}
+
+	/**
+	 * @param conexion the conexion to set
+	 */
+	public static void setConexion(Conexion conexion) {
+		Conexion.conexion = conexion;
+	}
+	
+	
+}

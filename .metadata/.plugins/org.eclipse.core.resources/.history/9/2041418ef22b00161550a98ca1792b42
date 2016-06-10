@@ -1,0 +1,6 @@
+package cl.curso.java.control_cinco.jParra;
+
+public class Empresa {
+	private String nombre;
+	private List<Empleado> empleado;
+}

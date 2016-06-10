@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete element from project &apos;guia_6&apos;&#x0D;&#x0A;- Original project: &apos;guia_6&apos;&#x0D;&#x0A;- Original element: &apos;guia_6/src/cl.curso.java.guia1&apos;" description="Delete element" element1="/src&lt;cl.curso.java.guia1" element2="/src&lt;cl.curso.java" element3="/src&lt;cl.curso" element4="/src&lt;cl" elements="4" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1461934827403" subPackages="false" version="1.0"/>
+</session>

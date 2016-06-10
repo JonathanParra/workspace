@@ -1,0 +1,7 @@
+package cl.java.DB;
+
+//sin statement
+
+public class ConectarBaseDatos {
+
+}

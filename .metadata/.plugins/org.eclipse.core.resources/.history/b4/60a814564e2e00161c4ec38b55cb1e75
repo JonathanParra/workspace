@@ -1,0 +1,13 @@
+package cl.curso.java.singleton;
+
+public class Motor {
+	private static Motor motor;
+	
+	private Motor(){
+		
+	}
+	
+	public static  Motor getInstancia(){
+		return motor;
+	}
+}

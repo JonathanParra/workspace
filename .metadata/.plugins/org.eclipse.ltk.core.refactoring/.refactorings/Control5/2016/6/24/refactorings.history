@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;cl.curso.java.control5&apos; to &apos;cl.curso.java.control_cinco.jParra&apos;&#x0D;&#x0A;- Original project: &apos;Control5&apos;&#x0D;&#x0A;- Original element: &apos;Control5/src/cl.curso.java.control5&apos;&#x0D;&#x0A;- Renamed element: &apos;Control5/src/cl.curso.java.control_cinco.jParra&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;cl.curso.java.control5&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;cl.curso.java.control5" name="cl.curso.java.control_cinco.jParra" qualified="false" references="true" stamp="1465220286538" textual="false" version="1.0"/>
+</session>

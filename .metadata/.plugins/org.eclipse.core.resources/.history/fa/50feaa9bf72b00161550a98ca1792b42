@@ -1,0 +1,83 @@
+package cl.curso.java.control_cinco.jParra;
+
+import java.util.Collection;
+import java.util.Collections;
+import java.util.Iterator;
+import java.util.List;
+
+public class Empresa {
+	private String nombre;
+	private List<Empleado> empleado;
+
+	public Empresa() {
+
+	}
+
+	/**
+	 * @param nombre
+	 * @param empleado
+	 */
+	public Empresa(String nombre, List<Empleado> empleado) {
+		super();
+		this.nombre = nombre;
+		this.empleado = empleado;
+	}
+
+	/**
+	 * @return the nombre
+	 */
+	public String getNombre() {
+		return nombre;
+	}
+
+	/**
+	 * @param nombre
+	 *            the nombre to set
+	 */
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	/**
+	 * @return the empleado
+	 */
+	public List<Empleado> getEmpleado() {
+		return empleado;
+	}
+
+	/**
+	 * @param empleado
+	 *            the empleado to set
+	 */
+	public void setEmpleado(List<Empleado> empleado) {
+		this.empleado = empleado;
+	}
+
+	public void ordenarEmpleadoPorNombre() {
+		Collections.sort(this.getEmpleado(),new Empleado());		
+	
+	}
+
+	public void ordenarEmpleadoPorDepartamento() {
+		Collections.sort(this.getEmpleado(),new Empleado);
+		
+	}
+	public void imprimir(){
+		Iterator<Empleado> empleado=this.getEmpleado().iterator();
+		while(empleado.hasNext()){
+			System.out.println(this.getEmpleado().toString());
+		}
+	}
+		
+	public Empleado buscarEmpleado(String rut) {
+		for (Empleado aux : this.getEmpleado()) {
+			if (aux.getRut().equals(rut)) {
+				return aux;
+			}
+		}
+		throw new NoExisteEmpleadoException();
+	}
+	
+	
+}
+

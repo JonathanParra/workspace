@@ -1,0 +1,6 @@
+package cl.ejercicio;
+
+public class Usuario {
+	private String nombre;
+	
+}

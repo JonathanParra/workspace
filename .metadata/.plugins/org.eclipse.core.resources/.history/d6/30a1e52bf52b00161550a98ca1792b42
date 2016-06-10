@@ -1,0 +1,73 @@
+package cl.curso.java.control_cinco.jParra;
+
+import java.util.List;
+
+public class Empresa {
+	private String nombre;
+	private List<Empleado> empleado;
+
+	public Empresa() {
+
+	}
+
+	/**
+	 * @param nombre
+	 * @param empleado
+	 */
+	public Empresa(String nombre, List<Empleado> empleado) {
+		super();
+		this.nombre = nombre;
+		this.empleado = empleado;
+	}
+
+	/**
+	 * @return the nombre
+	 */
+	public String getNombre() {
+		return nombre;
+	}
+
+	/**
+	 * @param nombre
+	 *            the nombre to set
+	 */
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	/**
+	 * @return the empleado
+	 */
+	public List<Empleado> getEmpleado() {
+		return empleado;
+	}
+
+	/**
+	 * @param empleado
+	 *            the empleado to set
+	 */
+	public void setEmpleado(List<Empleado> empleado) {
+		this.empleado = empleado;
+	}
+
+	public void ordenarEmpleadoPorNombre() {
+
+
+	
+	}
+
+	public void ordenarEmpleadoPorDepartamento() {
+
+		
+	}
+
+	public Empleado buscarEmpleado(String rut) {
+		for (Empleado aux : this.getEmpleado()) {
+			if (aux.getRut().equals(rut)) {
+				return aux;
+			}
+		}
+		throw new NoExisteEmpleadoException();
+	}
+
+}

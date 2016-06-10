@@ -1,0 +1,10 @@
+package cl.curso.java.login;
+
+import com.mysql.jdbc.PreparedStatement;
+
+public class UsuarioDAO {
+	public static void validar(Usuario usuario){
+		Conexion con=Conexion.getConexion();
+		PreparedStatement st=con.getConnection().prepareStatement("select * FROM  usuarios where  nombre_usuario = ? AND password = ?;");
+	}
+}

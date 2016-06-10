@@ -1,0 +1,32 @@
+package cl.ejercicio;
+import java.util.*;
+
+public class Usuario {
+	private String nombre;
+	private ArrayList playlist;
+	
+	public Usuario(String nombre, ArrayList playlist) {
+		super();
+		this.nombre = nombre;
+		this.playlist = playlist;
+	}
+
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public ArrayList getPlaylist() {
+		return playlist;
+	}
+
+	public void setPlaylist(ArrayList playlist) {
+		this.playlist = playlist;
+	}
+	
+	
+	
+}

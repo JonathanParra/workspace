@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;login.java&apos; to &apos;Conectarce a una DB/src/cl.java.DB&apos;&#x0D;&#x0A;- Original project: &apos;Bellako&apos;&#x0D;&#x0A;- Destination element: &apos;Conectarce a una DB/src/cl.java.DB&apos;&#x0D;&#x0A;- Original element: &apos;cl.java.chat.login.java&apos;" description="Copy compilation unit" destination="=Conectarce a una DB/src&lt;cl.java.DB" element1="/src&lt;cl.java.chat{login.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1465306501892" units="1" version="1.0"/>
+</session>

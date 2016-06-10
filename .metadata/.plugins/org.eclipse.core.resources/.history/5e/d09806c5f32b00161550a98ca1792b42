@@ -1,0 +1,12 @@
+package cl.curso.java.control_cinco.jParra;
+
+public class Persona {
+	private String rut;
+	private String nombre;
+	private String apellido;
+	private int edad;
+	
+	public Persona(){
+		
+	}
+}

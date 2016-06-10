@@ -1,0 +1,35 @@
+package cl.curso.java.control_cinco.jParra;
+
+import java.util.List;
+
+public class CuentaBancaria {
+	private int numero;
+	private List<Transaccion> transacciones;
+	
+	public CuentaBancaria(){
+		
+	}
+	/**
+	 * @param numero
+	 * @param transacciones
+	 */
+	public CuentaBancaria(int numero, List<Transaccion> transacciones) {
+		super();
+		this.numero = numero;
+		this.transacciones = transacciones;
+	}
+	
+	public void ordenarTransaccionPorFecha(){
+		
+	}
+	
+	public void ordenaTreansaccionPorTipo(){
+		
+	}
+	
+	public void Imprimir(){
+		
+	}
+	
+	//------------FIN--------------
+}

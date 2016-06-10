@@ -1,0 +1,89 @@
+package cl.java.chat;
+
+import java.io.*;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Scanner;
+
+public final class RegistroFile {
+	
+	private static final File nuevo=new File("Registro.txt");
+	private static Scanner s;
+	private Cliente cliente;
+	private boolean autorizacion=false;
+	
+	
+	
+	
+	private RegistroFile(){
+		
+	}
+	
+	@SuppressWarnings("finally")
+	private static boolean ReadFile(String name,String password) throws IOException{
+		String cliente;
+		String[] arreglo;
+		s = new Scanner(nuevo);
+		BufferedReader re=new BufferedReader(new FileReader(nuevo));
+		try{
+		while(s.hasNextLine()){
+			cliente=s.nextLine();
+			arreglo=cliente.split(" ");
+			if(arreglo[0].equals(name) & arreglo[1].equals(password)){
+				re.close();
+				return true;
+			}
+		}
+		}finally{
+			re.close();
+			return false;
+		}
+		
+	}
+	
+	/**
+	 * @return the autorizacion
+	 */
+	public boolean isAutorizacion() {
+		return autorizacion;
+	}
+
+	/**
+	 * @param autorizacion the autorizacion to set
+	 */
+	public void setAutorizacion(boolean autorizacion) {
+		this.autorizacion = autorizacion;
+	}
+
+	private static void fileWriter(String name,String password) throws IOException{
+		BufferedWriter	br=new BufferedWriter(new FileWriter(nuevo));
+		try{
+			br.write(name+" "+password+System.getProperty("line.separator"));
+		}finally{
+			br.close();
+		}
+		
+		
+	}
+	
+	
+	public void getUsuario(Cliente cliente) throws IOException{
+		
+		
+	}
+
+	public void setUsuario(Cliente cliente) throws IOException{
+		
+		fileWriter(cliente.getNombre(),cliente.getPassword());
+	}
+	
+	public void getPassword(){
+		
+	}
+	
+	public boolean existe(){
+		return this.nuevo.exists();
+	}
+	
+	
+}

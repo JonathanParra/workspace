@@ -1,0 +1,11 @@
+package cl.curso.java.control_cinco.jParra;
+
+public class Empleado {
+	private Departamento depa;
+	private int salario;
+	
+	
+	public boolean equals(Object obj){
+		return false;
+	}
+}

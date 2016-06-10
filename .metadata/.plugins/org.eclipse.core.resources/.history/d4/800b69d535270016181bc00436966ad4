@@ -1,0 +1,9 @@
+package cl.ejercicio;
+
+import java.util.*;
+
+public class PlayList {
+	private String nombre;
+	private ArrayList canciones;
+	private ArrayList seguidores;
+}

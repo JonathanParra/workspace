@@ -1,0 +1,6 @@
+package cl.curso.java.abstractFactory;
+
+public class MsWindowsWidgetFactory {
+	
+	public Window createWindow();
+}

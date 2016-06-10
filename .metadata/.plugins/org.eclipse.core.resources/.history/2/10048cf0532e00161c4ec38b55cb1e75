@@ -1,0 +1,6 @@
+package cl.curso.java.abstractFactory;
+//puede ser o clase abstracta o interface.
+public abstract class AbstractWidgetFactory {
+	
+	public Window createWindow();
+}

@@ -1,0 +1,12 @@
+package cl.curso.java.control_cinco.jParra;
+
+public class Departamento {
+
+	private String nombre;
+	private String descripcion;
+	
+	@Override
+	public boolean equals(Object obj){
+		return false;
+	}
+}

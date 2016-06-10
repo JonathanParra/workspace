@@ -1,0 +1,58 @@
+package cl.curso.java.login;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+public class Conexion {
+	private static Conexion conexion;
+	private Connection connection;
+	
+	private Conexion(){
+		
+	}
+
+	/**
+	 * @return the conexion
+	 */
+	public static Conexion getConexion() {
+		
+			if(conexion ==null){
+				try{
+					Class.forName("com.mysql.jdbc.Driver");
+					Connection conn = DriverManager.getConnection("jdbc:mysql://192.168.0.108:3306/curso", "alumnos", "java123");
+					Conexion conexion = new Conexion();
+					conexion.setConnection(conn);
+				}catch(Exception e){
+					e.printStackTrace();
+				}
+				return null;
+			}
+			else{
+				return conexion;
+			}
+	}
+
+	/**
+	 * @return the connection
+	 */
+	public Connection getConnection() {
+		return connection;
+	}
+
+	/**
+	 * @param connection the connection to set
+	 */
+	public void setConnection(Connection connection) {
+		this.connection = connection;
+	}
+
+	/**
+	 * @param conexion the conexion to set
+	 */
+	public static void setConexion(Conexion conexion) {
+		Conexion.conexion = conexion;
+	}
+	
+	
+	
+}

@@ -1,0 +1,19 @@
+package cl.java.DB;
+
+import java.awt.EventQueue;
+
+public class Programa {
+		
+		public static void main(String[] arg0){
+			EventQueue.invokeLater(new Runnable() {
+				public void run() {
+					try {
+						login window = new login();
+						window.frame.setVisible(true);
+					} catch (Exception e) {
+						e.printStackTrace();
+					}
+				}
+			});
+		}
+}

@@ -1,0 +1,8 @@
+package cl.curso.java.control_cinco.jParra;
+
+public class NoExisteEmpleadoException extends RuntimeException {
+	
+	public NoExisteEmpleadoException(){
+		super("Empleado No Existe.")
+	}
+}

@@ -1,0 +1,52 @@
+package cl.ejercicio;
+
+import java.util.*;
+
+public class PlayList {
+	private String nombre;
+	private ArrayList canciones;
+	private ArrayList seguidores;
+
+	public PlayList(String nombre, ArrayList canciones, ArrayList seguidores) {
+		super();
+		this.nombre = nombre;
+		this.canciones = canciones;
+		this.seguidores = seguidores;
+	}
+
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public ArrayList getCanciones() {
+		return canciones;
+	}
+
+	public void setCanciones(ArrayList canciones) {
+		this.canciones = canciones;
+	}
+
+	public ArrayList getSeguidores() {
+		return seguidores;
+	}
+
+	public void setSeguidores(ArrayList seguidores) {
+		this.seguidores = seguidores;
+	}
+
+	public void agregarCanciones(Cancion cancion){
+		
+	}
+	
+	public void eliminarCancion(Cancion cancion){
+		
+	}
+	
+	public void duracionMinuto(){
+		
+	}
+}

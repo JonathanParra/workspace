@@ -1,0 +1,7 @@
+package cl.ejercicio;
+
+public class Cancion {
+	private String nombre;
+	private String artista;
+	private int duracionMin;
+}

@@ -1,0 +1,9 @@
+package cl.curso.java.login_app;
+
+import com.github.sarxos.webcam.Webcam;
+
+public class ServicioWebCam {
+	Webcam webcam;
+	
+	
+}

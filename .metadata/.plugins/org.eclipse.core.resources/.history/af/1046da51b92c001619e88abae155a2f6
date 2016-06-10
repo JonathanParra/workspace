@@ -1,0 +1,24 @@
+package cl.java.DB;
+
+import java.sql.*;
+
+//sin statement
+
+public class ConectarBaseDatos  {
+	public static void main(String[] args) throws ClassNotFoundException, SQLException {
+//		PreparedStatement pstatementSelect = conexion.prepareStatement("SELECT * FROM alumnos WHERE nombre = ?");
+//		pstatementSelect.setString(1,"Jonathan");
+
+		Class.forName("com.mysql.jdbc.Driver");
+		Connection conexion = DriverManager.getConnection("jdbc:mysql://192.168.0.108:3306/curso", "alumnos", "java123");
+	
+		PreparedStatement pstatementSelect = conexion.prepareStatement("INSERT INTO  alumnos(idalumnos,nombre,apellido,apellidoMaterno) VALUE (?,?,?,?)");
+		pstatementSelect.setInt(1,7);
+		pstatementSelect.setString(2,"Jonathan");
+		pstatementSelect.setString(3,"Parra");
+		pstatementSelect.setString(4,"Villarroel");
+		
+		int resultpInsert=pstatementInsert
+		
+	}
+}

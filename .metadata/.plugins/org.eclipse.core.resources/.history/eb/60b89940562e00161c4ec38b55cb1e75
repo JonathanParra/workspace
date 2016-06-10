@@ -1,0 +1,10 @@
+package cl.curso.java.abstractFactory;
+
+public class MsWindowsWidgetFactory extends AbstractWidgetFactory {
+	
+	@Override
+	public Window createWindow(){
+		return null;
+		
+	}
+}

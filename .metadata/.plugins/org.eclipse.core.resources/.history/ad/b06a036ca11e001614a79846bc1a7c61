@@ -1,0 +1,11 @@
+package cl.curso.java.hilobomba;
+
+public class Programa {
+
+	public static void main(String[] args) {
+		new Thread(new HiloBomba);
+		
+
+	}
+
+}
